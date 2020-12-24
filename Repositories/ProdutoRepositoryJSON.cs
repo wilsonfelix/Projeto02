@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Projeto02.Repositories
 {
-    class ProdutoRepositoryJSON
+    public class ProdutoRepositoryJSON
     {
     }
 }
