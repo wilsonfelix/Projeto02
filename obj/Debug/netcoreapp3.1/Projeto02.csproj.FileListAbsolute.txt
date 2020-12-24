@@ -1,0 +1,15 @@
+H:\Projetos\Repositorio_local\Projeto02\bin\Debug\netcoreapp3.1\Projeto02.exe
+H:\Projetos\Repositorio_local\Projeto02\bin\Debug\netcoreapp3.1\Projeto02.deps.json
+H:\Projetos\Repositorio_local\Projeto02\bin\Debug\netcoreapp3.1\Projeto02.runtimeconfig.json
+H:\Projetos\Repositorio_local\Projeto02\bin\Debug\netcoreapp3.1\Projeto02.runtimeconfig.dev.json
+H:\Projetos\Repositorio_local\Projeto02\bin\Debug\netcoreapp3.1\Projeto02.dll
+H:\Projetos\Repositorio_local\Projeto02\bin\Debug\netcoreapp3.1\Projeto02.pdb
+H:\Projetos\Repositorio_local\Projeto02\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+H:\Projetos\Repositorio_local\Projeto02\obj\Debug\netcoreapp3.1\Projeto02.csprojAssemblyReference.cache
+H:\Projetos\Repositorio_local\Projeto02\obj\Debug\netcoreapp3.1\Projeto02.AssemblyInfoInputs.cache
+H:\Projetos\Repositorio_local\Projeto02\obj\Debug\netcoreapp3.1\Projeto02.AssemblyInfo.cs
+H:\Projetos\Repositorio_local\Projeto02\obj\Debug\netcoreapp3.1\Projeto02.csproj.CoreCompileInputs.cache
+H:\Projetos\Repositorio_local\Projeto02\obj\Debug\netcoreapp3.1\Projeto02.csproj.CopyComplete
+H:\Projetos\Repositorio_local\Projeto02\obj\Debug\netcoreapp3.1\Projeto02.dll
+H:\Projetos\Repositorio_local\Projeto02\obj\Debug\netcoreapp3.1\Projeto02.pdb
+H:\Projetos\Repositorio_local\Projeto02\obj\Debug\netcoreapp3.1\Projeto02.genruntimeconfig.cache
