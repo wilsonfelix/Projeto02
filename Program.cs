@@ -17,13 +17,13 @@ namespace ConsoleApp1
                 var produto = new Produto();
                 
                 produto.IdProduto = Guid.NewGuid();
-                produto.DataCadastro = produto.DataCadastro;
                 Console.Write("Nome do produto.........: ");
                 produto.Nome = Console.ReadLine();
                 Console.Write("Preço do produto........: ");
                 produto.Preco = decimal.Parse(Console.ReadLine());
                 Console.Write("Quantidade do produto...: ");
                 produto.Quantidade = int.Parse(Console.ReadLine());
+                produto.DataCadastro = DateTime.Now.ToString("HHmmss_dd-MM-yyyy");
 
                 //exportar os dados do produto para arquivo...
 
