@@ -5,6 +5,7 @@ using Projeto02.Entities; //importando
 using Newtonsoft.Json; //importando
 using System.IO; //importando
 
+
 namespace Projeto02.Repositories
 {
     public class ProdutoRepositoryJSON
@@ -18,7 +19,7 @@ namespace Projeto02.Repositories
             var json = JsonConvert.SerializeObject(produto, Formatting.Indented);
 
             //definir nome do arquivo
-            var nomeArquivo = $@"h:\Projetos\Repositorio_local\Projeto02\produto_{produto.IdProduto}.json";
+            var nomeArquivo = ($@"h:\Projetos\Repositorio_local\Projeto02\produto_{produto.DataCadastro}_{produto.IdProduto}.json");
 
             //abrindo o arquivo para gravação
             using (var streamWriter = new StreamWriter(nomeArquivo))

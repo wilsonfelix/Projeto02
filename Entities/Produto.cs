@@ -11,8 +11,10 @@ namespace Projeto02.Entities
         //properties (propriedades)
         //Campos da classe declarados com set(entrada)/get(saida)
         public Guid IdProduto { get; set; }
+        public string DataCadastro { get; set; }
         public string Nome { get; set; }
         public decimal Preco { get; set; }
         public int Quantidade { get; set; }
+        
     }
 }
