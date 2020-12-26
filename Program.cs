@@ -15,9 +15,9 @@ namespace ConsoleApp1
                 //criar um objeto para a classe produto...
                 //ler os dados do produto informado pelo usuário...
                 var produto = new Produto();
-                DateTime data = DateTime.Now;
+                
                 produto.IdProduto = Guid.NewGuid();
-                produto.DataCadastro = Convert.ToString(data);
+                produto.DataCadastro = produto.DataCadastro;
                 Console.Write("Nome do produto.........: ");
                 produto.Nome = Console.ReadLine();
                 Console.Write("Preço do produto........: ");
