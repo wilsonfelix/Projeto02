@@ -2,6 +2,9 @@
 using Projeto02.Entities; //importando
 using Projeto02.Repositories; //importando
 using System.IO;
+using Projeto02.Inputs;
+
+
 
 namespace ConsoleApp1
 {
@@ -17,23 +20,26 @@ namespace ConsoleApp1
                 //criar um objeto para a classe produto...
                 //ler os dados do produto informado pelo usuário...
                 var produto = new Produto();
-                
+                var menu = new Menu();
+
                 produto.IdProduto = Guid.NewGuid();
-                Console.Write("Nome do produto.........: ");
-                produto.Nome = Console.ReadLine();
-                Console.Write("Preço do produto........: ");
-                produto.Preco = decimal.Parse(Console.ReadLine());
-                Console.Write("Quantidade do produto...: ");
-                produto.Quantidade = int.Parse(Console.ReadLine());
+                //********************************************
+                //Recebe os metodos de entrada de dados da classe "ProdutoInput" para receber os dados
+                //inseridos pelo usuário
+                produto.Nome = ProdutoInput.LerNome();
+                produto.Preco = ProdutoInput.LerPreco();
+                produto.Quantidade = ProdutoInput.LerQuantidade();
+                //********************************************
                 produto.DataCadastro = DateTime.Now.ToString("HHmmss_dd-MM-yyyy");
 
                 //exportar os dados do produto para arquivo...
+                menu.seletor = MenuJSON_XML.SelecionarArquivo();
 
                 var produtoRepositoryJSON = new ProdutoRepositoryJSON();
 
                 produtoRepositoryJSON.Exportar(produto);
 
-                Console.WriteLine("\nArquivo JSON gerado com sucesso!!!");
+                Console.WriteLine("\nArquivo JSON e XML gerado com sucesso!!!");
 
             }
             catch(Exception e) //captura do erro!
