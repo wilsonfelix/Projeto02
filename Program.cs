@@ -1,6 +1,8 @@
 ﻿using System;
 using Projeto02.Entities; //importando
 using Projeto02.Repositories; //importando
+using System.IO;
+
 namespace ConsoleApp1
 {
     class Program
@@ -37,7 +39,16 @@ namespace ConsoleApp1
             catch(Exception e) //captura do erro!
             {
                 //imprimir mensagem de erro
-                Console.WriteLine("\nOcorreu um erro: " + e.Message);
+                Console.WriteLine("\nOcorreu um erro: " + e.Message + "\nO log do erro pode ser lido no caminho: " + @"h:\Projetos\Repositorio_local\Projeto02\");
+
+                //Criando arquivo de log
+                var logErro = @"h:\Projetos\Repositorio_local\Projeto02\Log_Erro" + DateTime.Now.ToString("HHmmss_dd-MM-yy_") + $"{e.Message}.txt";
+
+                using (var streamWriter = new StreamWriter(logErro))
+                {
+                    //escrever dentro do arquivo o conteúdo do JSON
+                    streamWriter.WriteLine(logErro);
+                }
             }
             Console.ReadKey();
         }
