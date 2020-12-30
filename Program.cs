@@ -19,9 +19,10 @@ namespace ConsoleApp1
             {
                 //criar um objeto para a classe produto...
                 //ler os dados do produto informado pelo usuário...
+                var produtoRepositoryGeradorArq = new ProdutoRepositoryGeradorArq();
                 var produto = new Produto();
                 var menu = new Menu();
-
+                
                 produto.IdProduto = Guid.NewGuid();
                 //********************************************
                 //Recebe os metodos de entrada de dados da classe "ProdutoInput" para receber os dados
@@ -34,13 +35,22 @@ namespace ConsoleApp1
 
                 //exportar os dados do produto para arquivo...
                 menu.seletor = MenuJSON_XML.SelecionarArquivo();
+                
+                if (menu.seletor == 1)
+                {
+                    produtoRepositoryGeradorArq.GeraJSON();
+                
+                }
+                else if(menu.seletor == 2)
+                {
+                    produtoRepositoryGeradorArq.GeraXML();
 
-                var produtoRepositoryJSON = new ProdutoRepositoryJSON();
+                }
+                else if(menu.seletor ==3)
+                {
+                    produtoRepositoryGeradorArq.GeraAmbos();
 
-                produtoRepositoryJSON.Exportar(produto);
-
-                Console.WriteLine("\nArquivo JSON e XML gerado com sucesso!!!");
-
+                }
             }
             catch(Exception e) //captura do erro!
             {

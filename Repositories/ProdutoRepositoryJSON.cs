@@ -19,10 +19,10 @@ namespace Projeto02.Repositories
             var json = JsonConvert.SerializeObject(produto, Formatting.Indented);
 
             //definir nome do arquivo
-            var nomeArquivo = @"h:\Projetos\Repositorio_local\Projeto02\produto_" + DateTime.Now.ToString("HHmmss_dd-MM-yy_") + $"{ produto.IdProduto}.json";
+            var nomeArquivoJSON = @"h:\Projetos\Repositorio_local\Projeto02\produto_" + DateTime.Now.ToString("HHmmss_dd-MM-yy_") + $"{ produto.IdProduto}.json";
             
             //abrindo o arquivo para gravação
-            using (var streamWriter = new StreamWriter(nomeArquivo))
+            using (var streamWriter = new StreamWriter(nomeArquivoJSON))
             {
                 //escrever dentro do arquivo o conteúdo do JSON
                 streamWriter.WriteLine(json);

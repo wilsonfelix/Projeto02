@@ -18,12 +18,12 @@ namespace Projeto02.Repositories
             var xml = new XmlSerializer(produto.GetType());
 
             //definir nome do arquivo
-            var nomeArquivo = @"h:\Projetos\Repositorio_local\Projeto02\produto_" + DateTime.Now.ToString("HHmmss_dd-MM-yy_") + $"{ produto.IdProduto}.xml";
+            var nomeArquivoXML = @"h:\Projetos\Repositorio_local\Projeto02\produto_" + DateTime.Now.ToString("HHmmss_dd-MM-yy_") + $"{ produto.IdProduto}.xml";
 
             //abrindo o arquivo para gravação
-            using (var streamWriter = new StreamWriter(nomeArquivo))
+            using (var streamWriter = new StreamWriter(nomeArquivoXML))
             {
-                //escrever dentro do arquivo o conteúdo do JSON
+                //escrever dentro do arquivo o conteúdo do XML
                 streamWriter.WriteLine(xml);
             }
 

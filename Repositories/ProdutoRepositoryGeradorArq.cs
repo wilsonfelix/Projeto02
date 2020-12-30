@@ -37,6 +37,20 @@ namespace Projeto02.Repositories
                 Console.WriteLine("\nArquivo XML gerado com sucesso!!!");
 
                 }
+
+            public void GeraAmbos()
+                {
+
+                var produto = new Produto();
+                var produtoRepositoryJSON = new ProdutoRepositoryJSON();
+                var produtoRepositoryXml = new ProdutoRepositoryXML();
+
+                produtoRepositoryJSON.Exportar(produto);
+                produtoRepositoryXml.Exportar(produto);
+
+                Console.WriteLine("\nArquivos JSON e XML gerados com sucesso!!!");
+
+                }
     
 
         }
