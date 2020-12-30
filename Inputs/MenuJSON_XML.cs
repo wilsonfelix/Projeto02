@@ -13,7 +13,7 @@ namespace Projeto02.Inputs
         public static int SelecionarArquivo()
         {
             Console.Write("\nDeseja exportar em qual extensão de arquivo? \n");
-            Console.Write("\nSelecione 1 para JSON, 2 para XML ou 3 para ambos: \n");
+            Console.Write("Selecione 1 para JSON, 2 para XML ou 3 para ambos: ");
             return int.Parse(Console.ReadLine());
             Console.ReadKey();
             
