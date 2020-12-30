@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Projeto02.Entities;
-using Newtonsoft.Json;
-using System.Xml.Serialization;
-using Projeto02.Repositories;
-using Projeto02.Inputs;
 
 
 namespace Projeto02.Repositories

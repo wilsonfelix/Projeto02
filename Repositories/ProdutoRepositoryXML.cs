@@ -1,9 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Projeto02.Entities; //importando
 using System.Xml.Serialization; //importando
 using System.IO; //importando
+
+
+
 
 namespace Projeto02.Repositories
 {

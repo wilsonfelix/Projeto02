@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 //namespace ->Localização da clase no projeto
 namespace Projeto02.Entities

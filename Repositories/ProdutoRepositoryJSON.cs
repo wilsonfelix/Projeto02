@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Projeto02.Entities; //importando
 using Newtonsoft.Json; //importando
 using System.IO; //importando

@@ -20,10 +20,11 @@ namespace ConsoleApp1
                 //criar um objeto para a classe produto...
                 //ler os dados do produto informado pelo usuário...
                 var produtoRepositoryGeradorArq = new ProdutoRepositoryGeradorArq();
-                var produto = new Produto();
-                var menu = new Menu();
                 
+                var menu = new Menu();
+                var produto = new Produto();
                 produto.IdProduto = Guid.NewGuid();
+                
                 //********************************************
                 //Recebe os metodos de entrada de dados da classe "ProdutoInput" para receber os dados
                 //inseridos pelo usuário
@@ -34,7 +35,8 @@ namespace ConsoleApp1
                 produto.DataCadastro = DateTime.Now.ToString("HHmmss_dd-MM-yyyy");
 
                 //exportar os dados do produto para arquivo...
-                menu.seletor = MenuJSON_XML.SelecionarArquivo();
+                var menuJSON_XML = new MenuJSON_XML();
+                menu.seletor = menuJSON_XML.SelecionarArquivo();
                 
                 if (menu.seletor == 1)
                 {
