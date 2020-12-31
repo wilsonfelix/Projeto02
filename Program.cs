@@ -1,6 +1,7 @@
 ﻿using Projeto02.Entities; //importando
 using Projeto02.Inputs;
 using Projeto02.Repositories; //importando
+using System.Globalization;
 using System;
 using System.IO;
 
@@ -19,13 +20,11 @@ namespace ConsoleApp1
             {
                 //criar um objeto para a classe produto...
                 //ler os dados do produto informado pelo usuário...
-                var produtoRepositoryGeradorArq = new ProdutoRepositoryGeradorArq();
-
-                var menu = new Menu();
+                                
                 var produto = new Produto();
-                produto.IdProduto = Guid.NewGuid();
 
-                //********************************************
+                produto.IdProduto = Guid.NewGuid();
+                
                 //Recebe os metodos de entrada de dados da classe "ProdutoInput" para receber os dados
                 //inseridos pelo usuário
                 produto.Nome = ProdutoInput.LerNome();
@@ -35,6 +34,8 @@ namespace ConsoleApp1
                 produto.DataCadastro = DateTime.Now.ToString("HHmmss_dd-MM-yyyy");
 
                 //exportar os dados do produto para arquivo...
+                var produtoRepositoryGeradorArq = new ProdutoRepositoryGeradorArq();
+                var menu = new Menu();
                 var menuJSON_XML = new MenuJSON_XML();
                 menu.seletor = menuJSON_XML.SelecionarArquivo();
 
