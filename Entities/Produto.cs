@@ -14,5 +14,7 @@ namespace Projeto02.Entities
         public string Nome { get; set; }
         public decimal Preco { get; set; }
         public int Quantidade { get; set; }
+        public string DataCadastro { get; set; }
+
     }
 }
