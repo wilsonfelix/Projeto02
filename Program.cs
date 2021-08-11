@@ -58,10 +58,10 @@ namespace ConsoleApp1
             catch (Exception e) //captura do erro!
             {
                 //imprimir mensagem de erro
-                Console.WriteLine("\nOcorreu um erro: " + e.Message + "\nO log do erro pode ser lido no caminho: " + @"h:\Projetos\Repositorio_local\Projeto02\");
+                Console.WriteLine("\nOcorreu um erro: " + e.Message + "\nO log do erro pode ser lido no caminho: " + @"d:\Projetos\Projeto02\");
 
                 //Criando arquivo de log
-                var logErro = @"h:\Projetos\Repositorio_local\Projeto02\Log_Erro" + DateTime.Now.ToString("HHmmss_dd-MM-yy_") + $"{e.Message}.txt";
+                var logErro = @"d:\Projetos\Projeto02\Log_Erro" + DateTime.Now.ToString("HHmmss_dd-MM-yy_") + $"{e.Message}.txt";
 
                 using (var streamWriter = new StreamWriter(logErro))
                 {

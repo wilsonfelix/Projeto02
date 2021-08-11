@@ -1,5 +1,6 @@
 ﻿using System;
 using Projeto02.Entities;
+using 
 
 
 namespace Projeto02.Repositories
@@ -10,7 +11,7 @@ namespace Projeto02.Repositories
             public void GeraJSON()
                 {
 
-                var produto = new Produto();
+                //var produto = new Produto();
                 var produtoRepositoryJSON = new ProdutoRepositoryJSON();
 
                 produtoRepositoryJSON.Exportar(produto);

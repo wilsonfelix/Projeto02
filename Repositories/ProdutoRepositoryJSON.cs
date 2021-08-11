@@ -17,7 +17,7 @@ namespace Projeto02.Repositories
             var json = JsonConvert.SerializeObject(produto, Formatting.Indented);
 
             //definir nome do arquivo
-            var nomeArquivoJSON = @"h:\Projetos\Repositorio_local\Projeto02\produto_" + DateTime.Now.ToString("HHmmss_dd-MM-yy_") + $"{ produto.IdProduto}.json";
+            var nomeArquivoJSON = @"d:\Projetos\Projeto02\\produto_" + DateTime.Now.ToString("HHmmss_dd-MM-yy_") + $"{ produto.IdProduto}.json";
             
             //abrindo o arquivo para gravação
             using (var streamWriter = new StreamWriter(nomeArquivoJSON))
